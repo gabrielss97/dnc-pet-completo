@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNC Pet</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <img src="./assets/dnc-logo.png" alt="dnc-logo" />
+
+      <div class="header-title">
+        <h1 class="first-title">Bem-Vindos ao</h1>
+        <h1 class="second-title">DNCPET</h1>
+      </div>
+
+      <div class="input-wrapper">
+        <img src="./assets/search-icon.png" alt="search-icon" />
+        <input type="text" placeholder="Busca no DNCPET" />
+      </div>
+
+      <div class="cart-shop-wrapper">
+        <span>Meu carrinho</span>
+        <img src="./assets/cart-shop-icon.png" alt="cart-shop" />
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== CATEGORIAS ===== -->
+      <section class="categories">
+        <span class="categories-titles">Categorias</span>
+        <div class="categories-animal-wrapper">
+          <div>
+            <img src="./assets/elipse-dog.png" alt="dog" />
+            <span class="categories-label">Cachorro</span>
+          </div>
+
+          <div>
+            <img src="./assets/elipse-cat.png" alt="cat" />
+            <span class="categories-label">Gato</span>
+          </div>
+
+          <div>
+            <img src="./assets/elipse-bird.png" alt="bird" />
+            <span class="categories-label">Passáros</span>
+          </div>
+
+          <div>
+            <img src="./assets/elipse-fish.png" alt="fish" />
+            <span class="categories-label">Peixes</span>
+          </div>
+        </div>
+        <span class="categories-titles">Ofertas do Dia</span>
+        <span class="categories-titles">Serviços</span>
+        <span class="categories-titles">Indique e Ganhe</span>
+      </section>
+
+      <!-- ===== SELEÇÃO PET ===== -->
+      <section class="selection-pet">
+        <h1 class="selection-title">Seleção Pet</h1>
+        <div class="selection-img-wrapper">
+          <img src="./assets/selection-1.png" alt="" />
+          <img src="./assets/selection-2.png" alt="" />
+          <img src="./assets/selection-3.png" alt="" />
+          <img src="./assets/selection-4.png" alt="" />
+        </div>
+      </section>
+
+      <!-- ===== ITENS E SERVIÇOS ===== -->
+      <section class="itens-services">
+        <!-- ===== Itens Exclusivos com até 80% OFF!  ===== -->
+        <div class="itens">
+          <h1 class="itens-title">Itens Exclusivos com até 80% OFF!</h1>
+          <div class="itens-wrapper">
+            <button class="itens-carousel-previus" onclick="show(-1)">
+              <img src="./assets/arrow-right.png" alt="" />
+            </button>
+            <ul class="itens-carousel">
+              <li class="item-card" id="card">
+                <img src="./assets/item-1.png" alt="" />
+                <p>Ração Tchei para cachorro belga grande porte - 600 g</p>
+                <span>R$ 20,90</span>
+              </li>
+              <li class="item-card">
+                <img src="./assets/item-2.png" alt="" />
+                <p>Ração Tchei para cachorro belga grande porte - 300 g</p>
+                <span>R$ 15,90</span>
+              </li>
+            </ul>
+            <button class="itens-carousel-next" onclick="show(+1)">
+              <img src="./assets/arrow-right.png" alt="" />
+            </button>
+          </div>
+
+          <button class="learn-more" onclick="showModal(index)">
+            Saiba mais
+          </button>
+        </div>
+
+        <!-- ===== Conheça nossos Serviços ===== -->
+        <div class="services">
+          <h1 class="services-title">Conheça nossos Serviços</h1>
+          <ul class="services-cards-wrapper">
+            <li class="services-card">
+              <img src="./assets/service-1.png" alt="" />
+            </li>
+            <li class="services-card">
+              <img src="./assets/service-2.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="modal" id="modal"></div>
+    </main>
+  </body>
+</html>
